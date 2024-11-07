@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item {
+  display: flex;
+  align-items: center;
+  padding-top: 1em;
+  gap: 1em;
+}
+
+.item > input[type="checkbox"] {
+  text-align: center;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  cursor: pointer;
+}
+
+.item > input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+.item > label {
+  flex-grow: 1;
+  word-break: break-all;
+}
+
+.item > button {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  min-width: 48px;
+  min-height: 48px;
+  cursor: pointer;
+}
+
+.item > button:hover,
+.item > button:focus {
+  background-color: red;
+  border: 1px solid black;
+}
